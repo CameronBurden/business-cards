@@ -3,8 +3,8 @@
  /*background code */
 .animation-area{
     background: linear-gradient(to left, #ffa36a, #fd4a4a);
-    width: 105%;
-    height: 105vh;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 .box-area{
@@ -167,4 +167,35 @@ svg{
   opacity: 0.5;
   animation:pulse; 
   animation-duration: 2s;
+}
+
+.moving{
+  width: 441px;
+  height: 254px;
+  position: fixed;
+  top:100px;
+  left:500px;
+  /* adjust this to space out the cards */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.moving .moving-bg{
+  box-sizing: content-box;
+  padding-bottom: 300px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('assets/GeometricBack.jpg');
+  /* background-size: cover; */
+  animation: moving 30s linear infinite;
+}
+
+@keyframes moving {
+  from{
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-441px)
+  }
 }
