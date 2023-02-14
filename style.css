@@ -7,6 +7,9 @@
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 .box-area{
   position: absolute;
@@ -173,7 +176,7 @@ svg{
 .moving{
   width: 441px;
   height: 254px;
-  position: fixed;
+  position: absolute;
   top:100px;
   left:500px;
   /* adjust this to space out the cards */
@@ -187,7 +190,7 @@ svg{
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('assets/GeometricBack.jpg');
+  background-image: url('assets/geometricback882.jpg');
   /* background-size: cover; */
   animation: moving 30s linear infinite;
 }
