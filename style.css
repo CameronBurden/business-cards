@@ -190,7 +190,7 @@ svg{
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('assets/GeometricBack.jpg');
+  background-image: url('assets/geometricback882.jpg');
   /* background-size: cover; */
   animation: moving 30s linear infinite;
 }
