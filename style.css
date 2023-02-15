@@ -1,4 +1,11 @@
-
+/* .icon-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "a b c";
+  border: 8px solid blue;
+} */
 
  /*background code */
 .animation-area{
@@ -206,19 +213,3 @@ svg{
     transform: translateX(-441px)
   }
 }
-/* .moving {
-background: url('assets/geometricback882.jpg') repeat-x;
-height: 100%;
-width: 100%;
-overflow: visible;
-background-size: 882px 254px;
-animation: slide 10s linear infinite
-} */
-/* @keyframes slide {
-  0% {
-    transform: translate(441);
-  }
-  100% {
-    transform: translate(-441px); /* The image width */
-  }
-} */
