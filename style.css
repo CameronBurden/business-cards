@@ -191,14 +191,14 @@ svg{
   padding-bottom: 300px;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 200%;
   background-image: url('assets/geometricback882.jpg');
-  background-size: 882px 254px;
+  background-size: 441px 254px;
   background-repeat:repeat-x;
-  animation: moving 30s linear infinite;
+  animation: slide 15s linear infinite;
 }
 
-@keyframes moving {
+@keyframes slide {
   from{
     transform: translateX(882)
   }
@@ -206,3 +206,19 @@ svg{
     transform: translateX(-441px)
   }
 }
+/* .moving {
+background: url('assets/geometricback882.jpg') repeat-x;
+height: 100%;
+width: 100%;
+overflow: visible;
+background-size: 882px 254px;
+animation: slide 10s linear infinite
+} */
+/* @keyframes slide {
+  0% {
+    transform: translate(441);
+  }
+  100% {
+    transform: translate(-441px); /* The image width */
+  }
+} */
