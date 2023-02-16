@@ -105,6 +105,17 @@
   }
 }
 
+/* Responsive grid for mobile */
+/* This code will be used when screen size is 1200px or less */
+@media screen and (max-width: 1200px) {
+  body{
+   transform-origin: top;
+   transform: scale(1.5);
+   margin:0 auto;
+  }
+ 
+   }
+
 /* the main container */
 
 .front-side{
