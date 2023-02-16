@@ -1,11 +1,10 @@
-/* .icon-container{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "a b c";
-  border: 8px solid blue;
-} */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid blue;
+
+  }
 
  /*background code */
 .animation-area{
@@ -134,15 +133,18 @@
   background-color:#F0EFEF;
 }
 
+
 .icon-container{
-  width:80%;
+  width: 12%;
   margin: 0 auto;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
-  "a b c";
-  grid-gap: 10px;
+  "a";
+  grid-gap: 20px;
+  margin-left: 260px;
+  margin-top: -10;
 }
 
 /* .circle{
@@ -166,7 +168,7 @@ h5{
 .st1{display:inline;}
 
 svg{
-  fill:purple;
+  fill:rgb(0, 0, 0);
 }
 
 #icon-fill{
