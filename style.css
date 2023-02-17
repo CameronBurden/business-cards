@@ -107,14 +107,14 @@
 
 /* Responsive grid for mobile */
 /* This code will be used when screen size is 1200px or less */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   body{
    transform-origin: top;
    transform: scale(.75);
    margin:0 auto;
   }
  
-   }
+   } */
 
 /* the main container */
 
@@ -132,8 +132,12 @@
   background-color:#F0EFEF;
 }
 
-
 .back-side{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   width: 441px;
   height: 254px;
   position: absolute;
@@ -143,10 +147,78 @@
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 2px 5px 15px 0px #17161694;
-  background-color:#F0EFEF;
+  /* background-color:#F0EFEF; */
 }
 
-/* .back-bg{
+/* Everything */
+  .moving .moving-bg{
+    grid-area: 1 / 1 / 3 / 3; 
+    box-sizing: content-box;
+    padding-bottom: 300px;
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    background-image: url('assets/882.jpg');
+    background-size: 441px 254px;
+    background-repeat:repeat-x;
+    animation: slide 15s linear infinite;
+    z-index: -1;
+  }
+  
+  @keyframes slide {
+    from{
+      transform: translateX(882)
+    }
+    to {
+      transform: translateX(-441px)
+    }
+  }
+  /* Orange */
+  .orange { grid-area: 2 / 1 / 3 / 2;
+  background-color:#ffa36a;
+
+  }
+
+  /* Icon Container */
+  .icon-container { 
+    grid-area: 2 / 2 / 3 / 3; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+    /* .icon-container{
+      width: 12%;
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "a";
+      grid-gap: 20px;
+      margin-left: 260px;
+      margin-top: -10;
+    } */
+
+  /* Children for icon container */
+  .parent {
+ 
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+  }
+  /* Text Container */
+  .text-container { grid-area: 2 / 1 / 3 / 3; }
+
+
+
+
+.back-bg{
   width: 441px;
   height: 177px;
   position: absolute;
@@ -155,10 +227,10 @@
   background-color: #eb0606;
   } */
 
-/* .back-bg .back-side{
+/* .back-bg{
   background-color:rgb(118, 27, 237);
-  width: 100%;
-  height:100%;
+  width: 441px;
+  height: 177px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -168,22 +240,11 @@
   }
   
   .top-half { grid-area: 1 / 1 / 2 / 2; }
-  .bottom-half { grid-area: 2 / 1 / 3 / 2; } */
+  .bottom-half { grid-area: 2 / 1 / 3 / 2; }  */
 
 
 
-.icon-container{
-  width: 12%;
-  margin: 0 auto;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "a";
-  grid-gap: 20px;
-  margin-left: 260px;
-  margin-top: -10;
-}
+
 
 /* .circle{
   background-image: url("/assets/circle.svg");
@@ -233,23 +294,4 @@ svg{
   overflow: hidden;
 }
 
-.moving .moving-bg{
-  box-sizing: content-box;
-  padding-bottom: 300px;
-  position: absolute;
-  height: 100%;
-  width: 200%;
-  background-image: url('assets/882.jpg');
-  background-size: 441px 254px;
-  background-repeat:repeat-x;
-  animation: slide 15s linear infinite;
-}
 
-@keyframes slide {
-  from{
-    transform: translateX(882)
-  }
-  to {
-    transform: translateX(-441px)
-  }
-}
