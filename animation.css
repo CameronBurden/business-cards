@@ -22,7 +22,6 @@
 
 /* Styling for the different boxes in the animation */
   
-  
 .box-area li{
     position: absolute;
     display: block;
@@ -83,5 +82,3 @@
       opacity: 0;
     }
   }
-  hidden;
-}
