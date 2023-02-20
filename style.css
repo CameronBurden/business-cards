@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   border: 1px solid blue;
-
   }
 
 /* Responsive grid for mobile */
@@ -36,18 +35,11 @@
 
 
 /* svg styling */
-/* .st0{display:none;} */
 .st1{display:inline;}
 
 svg{
   fill:rgb(0, 0, 0);
 }
-
-#icon-fill{
-  fill:none;
-}
-
-
 
 .svg-interaction:hover{
   fill:rgb(118, 27, 237);
@@ -59,12 +51,27 @@ svg{
 .front-side{
   width: 441px;
   height: 254px;
-  position: absolute;
-  top:100px;
-  left:500px;
+  position: relative;
   /* adjust this to space out the cards */
-  margin: 0 auto;
-  overflow: hidden;
+  margin: 50 auto;
+  /* overflow: hidden; */
 }
 
+.back-side{
+  width: 441px;
+  height: 254px;
+  position: relative;
+  /* adjust this to space out the cards */
+  margin: 50 auto;
+  /* overflow: hidden; */
+}
+
+h3{
+  color: white;
+  padding-top:10px;
+  padding-left: 10px;
+}
+h4{
+  padding-top:2px;
+}
 
