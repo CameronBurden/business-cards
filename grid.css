@@ -8,6 +8,7 @@
     margin: 30 auto;
     overflow: hidden;
     box-shadow: 2px 5px 15px 0px #17161694;
+    z-index: 30;
   }
   
   /* back of card */
@@ -20,6 +21,7 @@
     width: 441px;
     height: 254px;
     position: relative;
+    z-index: 40;
     /* adjust this to space out the cards */
     margin: 0 auto;
     overflow: hidden;
