@@ -84,6 +84,7 @@
       grid-template-rows: repeat(2, 1fr);
       grid-gap:0px;
       z-index:50;
+      margin-top: 10;
       }
 
     /* Text Container */
